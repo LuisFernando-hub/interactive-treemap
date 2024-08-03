@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.treemap-container {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.treemap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+.green-side {
+  background-color: #d0f0d0;
+}
+
+.red-side {
+  background-color: #f0d0d0;
+}
+
+.treemap-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  margin: 1px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.treemap-box .content {
+  padding: 2px;
+  overflow-wrap: break-word;
+  width: 100%;
+  height: 100%;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.control-panel {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-panel input,
+.control-panel select,
+.control-panel button {
+  margin: 5px 0;
+  padding: 5px;
+}
